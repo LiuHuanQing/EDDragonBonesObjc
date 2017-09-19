@@ -15,13 +15,14 @@
 {
     self = [super init];
     if (self) {
-        _scX = scY;
+        _scX = scX;
         _scY = scY;
         _zRotation = zRotation;
         _position = position;
     }
     return self;
 }
+
 
 - (instancetype)initWithJson:(NSDictionary *)json
 {
@@ -41,6 +42,7 @@
     return self;
 }
 
+
 - (instancetype)initWithJson:(NSDictionary *)json defaultTransform:(EDTransform *)defaultTransform
 {
     self = [super init];
@@ -53,13 +55,12 @@
         
         CGFloat offsetScX = json[@"scX"]? [json[@"scX"] floatValue] : 1;
         CGFloat offsetScY = -(json[@"scY"]? [json[@"scY"] floatValue] : 1);
-        CGFloat offsetZRotation = -((offsetSkX + offsetSkY) / 2 ) * M_PI / 180.0f;
+        CGFloat offsetZRotation = -((offsetSkX + offsetSkY) / 2.0 ) * M_PI / 180.0f;
 
         _scX = defaultTransform.scX * offsetScX;
         _scY = defaultTransform.scY * offsetScY;
         _zRotation = defaultTransform.zRotation + offsetZRotation;
         _position = CGPointMake(defaultTransform.position.x + offsetX, defaultTransform.position.y + offsetY);
-
     }
     return self;
 }

@@ -33,7 +33,7 @@
         NSDictionary *lastItem;
         for (NSDictionary *item in frameJSON)
         {
-            EDTransform *transform = [[EDTransform alloc] initWithJson:item defaultTransform:boneTransforms[_name]];
+            EDTransform *transform = [[EDTransform alloc] initWithJson:item[@"transform"] defaultTransform:boneTransforms[_name]];
             NSTimeInterval duration;
             BOOL tweenEasing;
             if(lastItem)

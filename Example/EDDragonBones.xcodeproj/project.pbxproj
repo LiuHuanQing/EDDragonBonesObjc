@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		119C8C5A2B79773D7E06E83A /* Pods_EDDragonBones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE5C1219E0544A90061A1C9 /* Pods_EDDragonBones.framework */; };
+		EA40F0071F8B39910036E0C3 /* EDAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFEC1F8B39910036E0C3 /* EDAction.m */; };
+		EA40F0081F8B39910036E0C3 /* EDAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFEE1F8B39910036E0C3 /* EDAnimation.m */; };
+		EA40F0091F8B39910036E0C3 /* EDArmature.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFF01F8B39910036E0C3 /* EDArmature.m */; };
+		EA40F00A1F8B39910036E0C3 /* EDArmatureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFF21F8B39910036E0C3 /* EDArmatureLoader.m */; };
+		EA40F00B1F8B39910036E0C3 /* EDArmatureNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFF41F8B39910036E0C3 /* EDArmatureNode.m */; };
+		EA40F00C1F8B39910036E0C3 /* EDBone.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFF61F8B39910036E0C3 /* EDBone.m */; };
+		EA40F00D1F8B39910036E0C3 /* EDDisplayNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFF81F8B39910036E0C3 /* EDDisplayNode.m */; };
+		EA40F00E1F8B39910036E0C3 /* EDSkeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFFA1F8B39910036E0C3 /* EDSkeleton.m */; };
+		EA40F00F1F8B39910036E0C3 /* EDSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFFC1F8B39910036E0C3 /* EDSkin.m */; };
+		EA40F0101F8B39910036E0C3 /* EDSlot.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40EFFE1F8B39910036E0C3 /* EDSlot.m */; };
+		EA40F0111F8B39910036E0C3 /* EDSlotNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40F0001F8B39910036E0C3 /* EDSlotNode.m */; };
+		EA40F0121F8B39910036E0C3 /* EDTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40F0021F8B39910036E0C3 /* EDTransform.m */; };
+		EA40F0131F8B39910036E0C3 /* SKAction+EDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40F0041F8B39910036E0C3 /* SKAction+EDAdd.m */; };
+		EA40F0141F8B39910036E0C3 /* SKNode+EDBone.m in Sources */ = {isa = PBXBuildFile; fileRef = EA40F0061F8B39910036E0C3 /* SKNode+EDBone.m */; };
 		EAC4D0BA1F6FCD4200679ED8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0B91F6FCD4200679ED8 /* main.m */; };
 		EAC4D0BD1F6FCD4200679ED8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0BC1F6FCD4200679ED8 /* AppDelegate.m */; };
 		EAC4D0BF1F6FCD4200679ED8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EAC4D0BE1F6FCD4200679ED8 /* GameScene.sks */; };
@@ -17,20 +31,6 @@
 		EAC4D0CA1F6FCD4200679ED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC4D0C81F6FCD4200679ED8 /* Main.storyboard */; };
 		EAC4D0CC1F6FCD4200679ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC4D0CB1F6FCD4200679ED8 /* Assets.xcassets */; };
 		EAC4D0CF1F6FCD4200679ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC4D0CD1F6FCD4200679ED8 /* LaunchScreen.storyboard */; };
-		EAC4D0EF1F6FCD5400679ED8 /* EDAction.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0D81F6FCD5400679ED8 /* EDAction.m */; };
-		EAC4D0F01F6FCD5400679ED8 /* EDAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0DA1F6FCD5400679ED8 /* EDAnimation.m */; };
-		EAC4D0F11F6FCD5400679ED8 /* EDArmature.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0DC1F6FCD5400679ED8 /* EDArmature.m */; };
-		EAC4D0F21F6FCD5400679ED8 /* EDArmatureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0DE1F6FCD5400679ED8 /* EDArmatureLoader.m */; };
-		EAC4D0F31F6FCD5400679ED8 /* EDArmatureNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0E01F6FCD5400679ED8 /* EDArmatureNode.m */; };
-		EAC4D0F41F6FCD5400679ED8 /* EDBone.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0E21F6FCD5400679ED8 /* EDBone.m */; };
-		EAC4D0F51F6FCD5400679ED8 /* EDSkeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0E41F6FCD5400679ED8 /* EDSkeleton.m */; };
-		EAC4D0F61F6FCD5400679ED8 /* EDSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0E61F6FCD5400679ED8 /* EDSkin.m */; };
-		EAC4D0F71F6FCD5400679ED8 /* EDSlot.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0E81F6FCD5400679ED8 /* EDSlot.m */; };
-		EAC4D0F81F6FCD5400679ED8 /* EDSlotNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0EA1F6FCD5400679ED8 /* EDSlotNode.m */; };
-		EAC4D0F91F6FCD5400679ED8 /* EDTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0EC1F6FCD5400679ED8 /* EDTransform.m */; };
-		EAC4D0FA1F6FCD5400679ED8 /* SKNode+EDBone.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0EE1F6FCD5400679ED8 /* SKNode+EDBone.m */; };
-		EAC4D1001F6FD44100679ED8 /* EDDisplayNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D0FF1F6FD44100679ED8 /* EDDisplayNode.m */; };
-		EAC4D1031F6FD6B700679ED8 /* SKAction+EDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC4D1021F6FD6B700679ED8 /* SKAction+EDAdd.m */; };
 		EAC4D10E1F70038600679ED8 /* class1_earth1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EAC4D1051F70038600679ED8 /* class1_earth1.atlas */; };
 		EAC4D10F1F70038600679ED8 /* bird_2.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC4D1071F70038600679ED8 /* bird_2.json */; };
 		EAC4D1101F70038600679ED8 /* monkey.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC4D1081F70038600679ED8 /* monkey.json */; };
@@ -45,6 +45,34 @@
 
 /* Begin PBXFileReference section */
 		4706C2AB46AB2F4E96DB5F6D /* Pods-EDDragonBones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDDragonBones.release.xcconfig"; path = "Pods/Target Support Files/Pods-EDDragonBones/Pods-EDDragonBones.release.xcconfig"; sourceTree = "<group>"; };
+		EA40EFEB1F8B39910036E0C3 /* EDAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAction.h; sourceTree = "<group>"; };
+		EA40EFEC1F8B39910036E0C3 /* EDAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAction.m; sourceTree = "<group>"; };
+		EA40EFED1F8B39910036E0C3 /* EDAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAnimation.h; sourceTree = "<group>"; };
+		EA40EFEE1F8B39910036E0C3 /* EDAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAnimation.m; sourceTree = "<group>"; };
+		EA40EFEF1F8B39910036E0C3 /* EDArmature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDArmature.h; sourceTree = "<group>"; };
+		EA40EFF01F8B39910036E0C3 /* EDArmature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDArmature.m; sourceTree = "<group>"; };
+		EA40EFF11F8B39910036E0C3 /* EDArmatureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDArmatureLoader.h; sourceTree = "<group>"; };
+		EA40EFF21F8B39910036E0C3 /* EDArmatureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDArmatureLoader.m; sourceTree = "<group>"; };
+		EA40EFF31F8B39910036E0C3 /* EDArmatureNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDArmatureNode.h; sourceTree = "<group>"; };
+		EA40EFF41F8B39910036E0C3 /* EDArmatureNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDArmatureNode.m; sourceTree = "<group>"; };
+		EA40EFF51F8B39910036E0C3 /* EDBone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDBone.h; sourceTree = "<group>"; };
+		EA40EFF61F8B39910036E0C3 /* EDBone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDBone.m; sourceTree = "<group>"; };
+		EA40EFF71F8B39910036E0C3 /* EDDisplayNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDDisplayNode.h; sourceTree = "<group>"; };
+		EA40EFF81F8B39910036E0C3 /* EDDisplayNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDDisplayNode.m; sourceTree = "<group>"; };
+		EA40EFF91F8B39910036E0C3 /* EDSkeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSkeleton.h; sourceTree = "<group>"; };
+		EA40EFFA1F8B39910036E0C3 /* EDSkeleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSkeleton.m; sourceTree = "<group>"; };
+		EA40EFFB1F8B39910036E0C3 /* EDSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSkin.h; sourceTree = "<group>"; };
+		EA40EFFC1F8B39910036E0C3 /* EDSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSkin.m; sourceTree = "<group>"; };
+		EA40EFFD1F8B39910036E0C3 /* EDSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSlot.h; sourceTree = "<group>"; };
+		EA40EFFE1F8B39910036E0C3 /* EDSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSlot.m; sourceTree = "<group>"; };
+		EA40EFFF1F8B39910036E0C3 /* EDSlotNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSlotNode.h; sourceTree = "<group>"; };
+		EA40F0001F8B39910036E0C3 /* EDSlotNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSlotNode.m; sourceTree = "<group>"; };
+		EA40F0011F8B39910036E0C3 /* EDTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTransform.h; sourceTree = "<group>"; };
+		EA40F0021F8B39910036E0C3 /* EDTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTransform.m; sourceTree = "<group>"; };
+		EA40F0031F8B39910036E0C3 /* SKAction+EDAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+EDAdd.h"; sourceTree = "<group>"; };
+		EA40F0041F8B39910036E0C3 /* SKAction+EDAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+EDAdd.m"; sourceTree = "<group>"; };
+		EA40F0051F8B39910036E0C3 /* SKNode+EDBone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+EDBone.h"; sourceTree = "<group>"; };
+		EA40F0061F8B39910036E0C3 /* SKNode+EDBone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+EDBone.m"; sourceTree = "<group>"; };
 		EAC4D0B51F6FCD4200679ED8 /* EDDragonBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDDragonBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC4D0B91F6FCD4200679ED8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAC4D0BB1F6FCD4200679ED8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,34 +87,6 @@
 		EAC4D0CB1F6FCD4200679ED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAC4D0CE1F6FCD4200679ED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAC4D0D01F6FCD4200679ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAC4D0D71F6FCD5400679ED8 /* EDAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAction.h; sourceTree = "<group>"; };
-		EAC4D0D81F6FCD5400679ED8 /* EDAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAction.m; sourceTree = "<group>"; };
-		EAC4D0D91F6FCD5400679ED8 /* EDAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAnimation.h; sourceTree = "<group>"; };
-		EAC4D0DA1F6FCD5400679ED8 /* EDAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAnimation.m; sourceTree = "<group>"; };
-		EAC4D0DB1F6FCD5400679ED8 /* EDArmature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDArmature.h; sourceTree = "<group>"; };
-		EAC4D0DC1F6FCD5400679ED8 /* EDArmature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDArmature.m; sourceTree = "<group>"; };
-		EAC4D0DD1F6FCD5400679ED8 /* EDArmatureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDArmatureLoader.h; sourceTree = "<group>"; };
-		EAC4D0DE1F6FCD5400679ED8 /* EDArmatureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDArmatureLoader.m; sourceTree = "<group>"; };
-		EAC4D0DF1F6FCD5400679ED8 /* EDArmatureNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDArmatureNode.h; sourceTree = "<group>"; };
-		EAC4D0E01F6FCD5400679ED8 /* EDArmatureNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDArmatureNode.m; sourceTree = "<group>"; };
-		EAC4D0E11F6FCD5400679ED8 /* EDBone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDBone.h; sourceTree = "<group>"; };
-		EAC4D0E21F6FCD5400679ED8 /* EDBone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDBone.m; sourceTree = "<group>"; };
-		EAC4D0E31F6FCD5400679ED8 /* EDSkeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSkeleton.h; sourceTree = "<group>"; };
-		EAC4D0E41F6FCD5400679ED8 /* EDSkeleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSkeleton.m; sourceTree = "<group>"; };
-		EAC4D0E51F6FCD5400679ED8 /* EDSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSkin.h; sourceTree = "<group>"; };
-		EAC4D0E61F6FCD5400679ED8 /* EDSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSkin.m; sourceTree = "<group>"; };
-		EAC4D0E71F6FCD5400679ED8 /* EDSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSlot.h; sourceTree = "<group>"; };
-		EAC4D0E81F6FCD5400679ED8 /* EDSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSlot.m; sourceTree = "<group>"; };
-		EAC4D0E91F6FCD5400679ED8 /* EDSlotNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSlotNode.h; sourceTree = "<group>"; };
-		EAC4D0EA1F6FCD5400679ED8 /* EDSlotNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSlotNode.m; sourceTree = "<group>"; };
-		EAC4D0EB1F6FCD5400679ED8 /* EDTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTransform.h; sourceTree = "<group>"; };
-		EAC4D0EC1F6FCD5400679ED8 /* EDTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTransform.m; sourceTree = "<group>"; };
-		EAC4D0ED1F6FCD5400679ED8 /* SKNode+EDBone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+EDBone.h"; sourceTree = "<group>"; };
-		EAC4D0EE1F6FCD5400679ED8 /* SKNode+EDBone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+EDBone.m"; sourceTree = "<group>"; };
-		EAC4D0FE1F6FD44100679ED8 /* EDDisplayNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDDisplayNode.h; sourceTree = "<group>"; };
-		EAC4D0FF1F6FD44100679ED8 /* EDDisplayNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDDisplayNode.m; sourceTree = "<group>"; };
-		EAC4D1011F6FD6B700679ED8 /* SKAction+EDAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+EDAdd.h"; sourceTree = "<group>"; };
-		EAC4D1021F6FD6B700679ED8 /* SKAction+EDAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+EDAdd.m"; sourceTree = "<group>"; };
 		EAC4D1051F70038600679ED8 /* class1_earth1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = class1_earth1.atlas; sourceTree = "<group>"; };
 		EAC4D1071F70038600679ED8 /* bird_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bird_2.json; sourceTree = "<group>"; };
 		EAC4D1081F70038600679ED8 /* monkey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monkey.json; sourceTree = "<group>"; };
@@ -130,6 +130,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA40EFEA1F8B39910036E0C3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EA40EFEB1F8B39910036E0C3 /* EDAction.h */,
+				EA40EFEC1F8B39910036E0C3 /* EDAction.m */,
+				EA40EFED1F8B39910036E0C3 /* EDAnimation.h */,
+				EA40EFEE1F8B39910036E0C3 /* EDAnimation.m */,
+				EA40EFEF1F8B39910036E0C3 /* EDArmature.h */,
+				EA40EFF01F8B39910036E0C3 /* EDArmature.m */,
+				EA40EFF11F8B39910036E0C3 /* EDArmatureLoader.h */,
+				EA40EFF21F8B39910036E0C3 /* EDArmatureLoader.m */,
+				EA40EFF31F8B39910036E0C3 /* EDArmatureNode.h */,
+				EA40EFF41F8B39910036E0C3 /* EDArmatureNode.m */,
+				EA40EFF51F8B39910036E0C3 /* EDBone.h */,
+				EA40EFF61F8B39910036E0C3 /* EDBone.m */,
+				EA40EFF71F8B39910036E0C3 /* EDDisplayNode.h */,
+				EA40EFF81F8B39910036E0C3 /* EDDisplayNode.m */,
+				EA40EFF91F8B39910036E0C3 /* EDSkeleton.h */,
+				EA40EFFA1F8B39910036E0C3 /* EDSkeleton.m */,
+				EA40EFFB1F8B39910036E0C3 /* EDSkin.h */,
+				EA40EFFC1F8B39910036E0C3 /* EDSkin.m */,
+				EA40EFFD1F8B39910036E0C3 /* EDSlot.h */,
+				EA40EFFE1F8B39910036E0C3 /* EDSlot.m */,
+				EA40EFFF1F8B39910036E0C3 /* EDSlotNode.h */,
+				EA40F0001F8B39910036E0C3 /* EDSlotNode.m */,
+				EA40F0011F8B39910036E0C3 /* EDTransform.h */,
+				EA40F0021F8B39910036E0C3 /* EDTransform.m */,
+				EA40F0031F8B39910036E0C3 /* SKAction+EDAdd.h */,
+				EA40F0041F8B39910036E0C3 /* SKAction+EDAdd.m */,
+				EA40F0051F8B39910036E0C3 /* SKNode+EDBone.h */,
+				EA40F0061F8B39910036E0C3 /* SKNode+EDBone.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
 		EAC4D0AC1F6FCD4200679ED8 = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +187,8 @@
 		EAC4D0B71F6FCD4200679ED8 /* EDDragonBones */ = {
 			isa = PBXGroup;
 			children = (
+				EA40EFEA1F8B39910036E0C3 /* Classes */,
 				EAC4D1041F70038600679ED8 /* Resource */,
-				EAC4D0D61F6FCD5400679ED8 /* EDDragonBonesSpriteKit */,
 				EAC4D0BB1F6FCD4200679ED8 /* AppDelegate.h */,
 				EAC4D0BC1F6FCD4200679ED8 /* AppDelegate.m */,
 				EAC4D0BE1F6FCD4200679ED8 /* GameScene.sks */,
@@ -176,41 +212,6 @@
 				EAC4D0B91F6FCD4200679ED8 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EAC4D0D61F6FCD5400679ED8 /* EDDragonBonesSpriteKit */ = {
-			isa = PBXGroup;
-			children = (
-				EAC4D0D71F6FCD5400679ED8 /* EDAction.h */,
-				EAC4D0D81F6FCD5400679ED8 /* EDAction.m */,
-				EAC4D0D91F6FCD5400679ED8 /* EDAnimation.h */,
-				EAC4D0DA1F6FCD5400679ED8 /* EDAnimation.m */,
-				EAC4D0DB1F6FCD5400679ED8 /* EDArmature.h */,
-				EAC4D0DC1F6FCD5400679ED8 /* EDArmature.m */,
-				EAC4D0DD1F6FCD5400679ED8 /* EDArmatureLoader.h */,
-				EAC4D0DE1F6FCD5400679ED8 /* EDArmatureLoader.m */,
-				EAC4D0DF1F6FCD5400679ED8 /* EDArmatureNode.h */,
-				EAC4D0E01F6FCD5400679ED8 /* EDArmatureNode.m */,
-				EAC4D0E11F6FCD5400679ED8 /* EDBone.h */,
-				EAC4D0E21F6FCD5400679ED8 /* EDBone.m */,
-				EAC4D0E31F6FCD5400679ED8 /* EDSkeleton.h */,
-				EAC4D0E41F6FCD5400679ED8 /* EDSkeleton.m */,
-				EAC4D0E51F6FCD5400679ED8 /* EDSkin.h */,
-				EAC4D0E61F6FCD5400679ED8 /* EDSkin.m */,
-				EAC4D0E71F6FCD5400679ED8 /* EDSlot.h */,
-				EAC4D0E81F6FCD5400679ED8 /* EDSlot.m */,
-				EAC4D0E91F6FCD5400679ED8 /* EDSlotNode.h */,
-				EAC4D0EA1F6FCD5400679ED8 /* EDSlotNode.m */,
-				EAC4D0EB1F6FCD5400679ED8 /* EDTransform.h */,
-				EAC4D0EC1F6FCD5400679ED8 /* EDTransform.m */,
-				EAC4D0ED1F6FCD5400679ED8 /* SKNode+EDBone.h */,
-				EAC4D0EE1F6FCD5400679ED8 /* SKNode+EDBone.m */,
-				EAC4D0FE1F6FD44100679ED8 /* EDDisplayNode.h */,
-				EAC4D0FF1F6FD44100679ED8 /* EDDisplayNode.m */,
-				EAC4D1011F6FD6B700679ED8 /* SKAction+EDAdd.h */,
-				EAC4D1021F6FD6B700679ED8 /* SKAction+EDAdd.m */,
-			);
-			path = EDDragonBonesSpriteKit;
 			sourceTree = "<group>";
 		};
 		EAC4D1041F70038600679ED8 /* Resource */ = {
@@ -389,24 +390,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA40F00F1F8B39910036E0C3 /* EDSkin.m in Sources */,
 				EAC4D0C71F6FCD4200679ED8 /* GameViewController.m in Sources */,
-				EAC4D0F11F6FCD5400679ED8 /* EDArmature.m in Sources */,
-				EAC4D0F01F6FCD5400679ED8 /* EDAnimation.m in Sources */,
+				EA40F00E1F8B39910036E0C3 /* EDSkeleton.m in Sources */,
+				EA40F0091F8B39910036E0C3 /* EDArmature.m in Sources */,
+				EA40F0081F8B39910036E0C3 /* EDAnimation.m in Sources */,
 				EAC4D0BD1F6FCD4200679ED8 /* AppDelegate.m in Sources */,
-				EAC4D1001F6FD44100679ED8 /* EDDisplayNode.m in Sources */,
-				EAC4D0F71F6FCD5400679ED8 /* EDSlot.m in Sources */,
-				EAC4D0F41F6FCD5400679ED8 /* EDBone.m in Sources */,
-				EAC4D0FA1F6FCD5400679ED8 /* SKNode+EDBone.m in Sources */,
-				EAC4D1031F6FD6B700679ED8 /* SKAction+EDAdd.m in Sources */,
-				EAC4D0F81F6FCD5400679ED8 /* EDSlotNode.m in Sources */,
+				EA40F00C1F8B39910036E0C3 /* EDBone.m in Sources */,
 				EAC4D0C41F6FCD4200679ED8 /* GameScene.m in Sources */,
 				EAC4D0BA1F6FCD4200679ED8 /* main.m in Sources */,
-				EAC4D0F21F6FCD5400679ED8 /* EDArmatureLoader.m in Sources */,
-				EAC4D0F31F6FCD5400679ED8 /* EDArmatureNode.m in Sources */,
-				EAC4D0F91F6FCD5400679ED8 /* EDTransform.m in Sources */,
-				EAC4D0F61F6FCD5400679ED8 /* EDSkin.m in Sources */,
-				EAC4D0EF1F6FCD5400679ED8 /* EDAction.m in Sources */,
-				EAC4D0F51F6FCD5400679ED8 /* EDSkeleton.m in Sources */,
+				EA40F00D1F8B39910036E0C3 /* EDDisplayNode.m in Sources */,
+				EA40F00A1F8B39910036E0C3 /* EDArmatureLoader.m in Sources */,
+				EA40F0111F8B39910036E0C3 /* EDSlotNode.m in Sources */,
+				EA40F00B1F8B39910036E0C3 /* EDArmatureNode.m in Sources */,
+				EA40F0131F8B39910036E0C3 /* SKAction+EDAdd.m in Sources */,
+				EA40F0121F8B39910036E0C3 /* EDTransform.m in Sources */,
+				EA40F0101F8B39910036E0C3 /* EDSlot.m in Sources */,
+				EA40F0141F8B39910036E0C3 /* SKNode+EDBone.m in Sources */,
+				EA40F0071F8B39910036E0C3 /* EDAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

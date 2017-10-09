@@ -58,7 +58,6 @@
             SKNode *boneNode = [[SKNode alloc] initWithBone:bone];
             SKNode *parentNode = nil;
             NSString *parentName = bone.parent;
-            
             if (parentName)
             {
                 parentNode = _boneDictionary[parentName];
@@ -69,6 +68,8 @@
             }
             [parentNode addChild:boneNode];
             _boneDictionary[bone.name] = boneNode;
+            
+
         }
         
         for (EDSlot *slot in armature.slot)
@@ -77,6 +78,7 @@
             SKNode *parentNode = _boneDictionary[slot.parent];
             [parentNode addChild:slotNode];
             _slotDictionary[slot.name] = slotNode;
+            
         }
         
         for (EDSkin *skin in armature.skin)
@@ -94,8 +96,10 @@
                         NSString *textureName = [components[1] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
                         SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:atlasName];
                         SKTexture *texture = [atlas textureNamed:textureName];
+                        
                         EDDisplayNode *spriteNode = [[EDDisplayNode alloc] initWithTransform:display.transform texture:texture];
                         [node addChild:spriteNode];
+                        
                     }
                     else if([display.type isEqualToString:@"armature"])
                     {
@@ -117,8 +121,8 @@
             for (EDAnimationBone *bone in animation.bone)
             {
                 SKAction *action = [SKAction boneFrameAction:bone.frame duration:animation.duration];
-                
                 _boneAnimationDictionary[animation.name][bone.name] = action;
+
             }
             
             for (EDAnimationSlot *slot in animation.slot)

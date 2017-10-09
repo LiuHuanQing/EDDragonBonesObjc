@@ -12,10 +12,11 @@
 + (instancetype)boneFrameAction:(NSArray<EDAnimationBoneFrame *> *)frame duration:(NSTimeInterval)duration
 {
     NSMutableArray *sequenceActionArray = [NSMutableArray arrayWithCapacity:frame.count];
-    
     for (EDAnimationBoneFrame *theFrame in frame)
     {
         NSTimeInterval frameDuration = theFrame.duration;
+//        NSLog(@"theFrame.tweenEasing %d",theFrame.tweenEasing);
+//        printf("scX %0.06f,scY %0.06f,z %0.06f,(x:%0.06f,y:%0.06f),frameDuration:%0.06f,duration %0.06f\n",theFrame.transform.scX,theFrame.transform.scY,theFrame.transform.zRotation,theFrame.transform.position.x,theFrame.transform.position.y,frameDuration,duration);
         if (theFrame.tweenEasing)
         {
             SKAction *positionAction = [SKAction moveTo:theFrame.transform.position duration:frameDuration];

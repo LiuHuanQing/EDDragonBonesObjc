@@ -37,23 +37,30 @@
     
     
     
-//    NSString *JSONPath = [[NSBundle mainBundle] pathForResource:@"skeleton" ofType:@"json"];
-//    EDArmatureLoader *loader = [[EDArmatureLoader alloc] initWithFilepath:JSONPath];
-//    EDArmatureNode *node = [loader loadNode:@"injuredfarmer"];
-//    [node repeatAnimation:@"idle"];
-//    node.position = CGPointMake(-300, -50);
-//    
-//    [self addChild:node];
+    NSString *JSONPath = [[NSBundle mainBundle] pathForResource:@"skeleton" ofType:@"json"];
+    EDArmatureLoader *loader = [[EDArmatureLoader alloc] initWithFilepath:JSONPath];
+    EDArmatureNode *node = [loader loadNode:@"injuredfarmer"];
+    [node repeatAnimation:@"idle"];
+    node.position = CGPointMake(-300, -50);
+    
+    [self addChild:node];
 
     
     NSString *JSONPath2 = [[NSBundle mainBundle] pathForResource:@"skeleton2" ofType:@"json"];
     EDArmatureLoader *loader2 = [[EDArmatureLoader alloc] initWithFilepath:JSONPath2];
     EDArmatureNode *node2 = [loader2 loadNode:@"class1_earth"];
     [node2 repeatAnimation:@"idle"];
-    
     node2.position = CGPointMake(200, 10);
     [self addChild:node2];
 
+    NSString *JSONPath3 = [[NSBundle mainBundle] pathForResource:@"monkey" ofType:@"json"];
+    EDArmatureLoader *loader3 = [[EDArmatureLoader alloc] initWithFilepath:JSONPath3];
+    EDArmatureNode *node3 = [loader3 loadNode:@"monkey_1_01"];
+    [node3 repeatAnimation:@"idle"];
+    node3.position = CGPointMake(300, 100);
+    [self addChild:node3];
+
+    
     
 //    NSString *JSONPath2 = [[NSBundle mainBundle] pathForResource:@"Bicycle_ske" ofType:@"json"];
 //    EDArmatureLoader *loader2 = [[EDArmatureLoader alloc] initWithFilepath:JSONPath2];
@@ -81,6 +88,10 @@
     n.position = pos;
     n.strokeColor = [SKColor greenColor];
     [self addChild:n];
+    
+    
+    SKNode *node = [self childNodeWithName:@"cirrus"];
+    NSLog(@"node %@",node);
 }
 
 - (void)touchMovedToPoint:(CGPoint)pos {
@@ -99,7 +110,9 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    NSLog(@"self.children %@",self.children);
+    SKNode *node = [self childNodeWithName:@"cirrus"];
+    NSLog(@"node %@",node);
+
     // Run 'Pulse' action from 'Actions.sks'
 //    [_label runAction:[SKAction actionNamed:@"Pulse"] withKey:@"fadeInOut"];
     

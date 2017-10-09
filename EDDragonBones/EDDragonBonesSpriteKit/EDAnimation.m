@@ -39,7 +39,8 @@
             if(lastItem)
             {
                 duration = 1.0 / (NSTimeInterval)frameRate * (NSTimeInterval)([lastItem[@"duration"] intValue]);
-                tweenEasing = (lastItem[@"tweenEasing"] != nil); // if not int is no
+                
+                tweenEasing = (lastItem[@"tweenEasing"] != [NSNull null]); // if not int is no
             }
             else
             {

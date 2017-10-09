@@ -29,15 +29,14 @@
     self = [super init];
     if (self)
     {
-        float skX =  json[@"skX"]?[json[@"skX"] floatValue]:0;
-        float skY =  json[@"skY"]?[json[@"skY"] floatValue]:0;
-        float x =  json[@"x"]?[json[@"x"] floatValue]:0;
-        float y =  -(json[@"y"]?[json[@"y"] floatValue]:0);
-        _scX =  json[@"scX"]?[json[@"scX"] floatValue]:1;
-        _scY =  json[@"scY"]?[json[@"scY"] floatValue]:1;
+        CGFloat skX =  json[@"skX"]?[json[@"skX"] doubleValue]:0;
+        CGFloat skY =  json[@"skY"]?[json[@"skY"] doubleValue]:0;
+        CGFloat x =  json[@"x"]?[json[@"x"] doubleValue]:0;
+        CGFloat y =  -(json[@"y"]?[json[@"y"] doubleValue]:0);
+        _scX =  json[@"scX"]?[json[@"scX"] doubleValue]:1;
+        _scY =  json[@"scY"]?[json[@"scY"] doubleValue]:1;
         _zRotation = -(((skX + skY) / 2.0 ) * M_PI / 180.0);
         _position = CGPointMake(x, y);
-        
     }
     return self;
 }
@@ -54,7 +53,7 @@
         float offsetY = -(json[@"y"]? [json[@"y"] floatValue] : 0);
         
         CGFloat offsetScX = json[@"scX"]? [json[@"scX"] floatValue] : 1;
-        CGFloat offsetScY = -(json[@"scY"]? [json[@"scY"] floatValue] : 1);
+        CGFloat offsetScY = json[@"scY"]? [json[@"scY"] floatValue] : 1;
         CGFloat offsetZRotation = -((offsetSkX + offsetSkY) / 2.0 ) * M_PI / 180.0f;
 
         _scX = defaultTransform.scX * offsetScX;
